@@ -17,7 +17,12 @@ public class DemoController {
     }
 
     @GetMapping("/find")
-    public String fina() {
+    public String find() {
         return demoService.find();
+    }
+
+    @GetMapping("/exception")
+    public void exception() {
+        demoService.exception();
     }
 }
